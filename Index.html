@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BuildMaster Construction</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+
+       <div class="logo">
+        <a href="#" id="logoLink" style="cursor: pointer;">
+            <img src="Images/JuPet_logo.png" alt="BuildMaster Construction logo">
+        </a>
+    </div>
+
+    <nav>
+
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li id="adminNav" style="display: none;"><a href="admin.php"><i class="fas fa-lock-open"></i> Admin</a></li>
+            <li id="logoutNav" style="display: none;"><a href="#" id="logoutBtn"><i class="fas fa-sign-out-alt"></i> Logout</a></li>
+        </ul>
+
+    </nav>
+
+    <button class="quote-btn" id="quoteBtn">
+        Get Quote
+    </button>
+
+</header>
+
+<section class="hero" id="home">
+
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+
+        <h1>
+            Building the Future with Strength and Precisions
+        </h1>
+
+        <p>
+            Trusted construction solutions built with quality and realibility.
+        </p>
+
+        <p class="booking-header">
+            Book your inquiry for building projects today and get a tailored quote.
+        </p>
+
+        <div class="hero-buttons">
+
+            <button class="primary-btn" id="projectsBtn">
+                Our Projects
+            </button>
+
+            <button class="secondary-btn" id="contactBtn">
+                Contact Us
+            </button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="about" id="about">
+
+    <div class="about-image">
+        <img src="images/Rennovation.jpg" alt="team">
+    </div>
+
+    <div class="about-content">
+
+        <h2>About Us</h2>
+
+        <p>
+            We deliver quality residential and commercial construction
+            services using modern engineering standards.
+        </p>
+
+        <div class="stats">
+
+            <div class="stat-box">
+                <h3>50+</h3>
+                <p>Projects</p>
+            </div>
+
+            <div class="stat-box">
+                <h3>30+</h3>
+                <p>Workers</p>
+            </div>
+
+            <div class="stat-box">
+                <h3>10+</h3>
+                <p>Years</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="services" id="services">
+
+    <h2 class="section-title">
+        Our Services
+    </h2>
+
+    <div class="service-grid">
+
+            <div class="service-card">
+            <div class="service-image">
+                <img src="Images/House.jpg" alt="Residential Construction">
+            </div>
+            <div class="service-info">
+                <h3>Residential Construction</h3>
+                <p>Modern home construction services.</p>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <div class="service-image">
+                <img src="Images/Commericial.jpg" alt="Commercial Construction">
+            </div>
+            <div class="service-info">
+                <h3>Commercial Construction</h3>
+                <p>Offices and commercial buildings.</p>
+            </div>
+        </div>
+
+        <div class="service-card">
+            <div class="service-image">
+                <img src="Images/Residential.jpg" alt="Renovation">
+            </div>
+            <div class="service-info">
+                <h3>Renovation</h3>
+                <p>Remodeling and renovation services.</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="other-services">
+        <h2>Core Services</h2>
+        <div class="other-services-grid">
+            <span class="other-service-item">Building Construction</span>
+            <span class="other-service-item">Roofing Services</span>
+            <span class="other-service-item">Tiling & Flooring</span>
+            <span class="other-service-item">Renovation & Remodeling</span>
+            <span class="other-service-item">Plumbing Installation</span>
+            <span class="other-service-item">Electrical Installation</span>
+            <span class="other-service-item">Interior Finishing</span>
+            <span class="other-service-item">Painting Services</span>
+            <span class="other-service-item">Architectural Design & Planning</span>
+            <span class="other-service-item">Steel Fabrication & Welding</span>
+            <span class="other-service-item">Landscaping & Exterior Works</span>
+            <span class="other-service-item">Project Management</span>
+        </div>
+    </div>
+
+</section>
+
+<section class="projects" id="projects">
+
+    <h2 class="section-title">
+        Latest Projects
+    </h2>
+
+    <div class="project-grid">
+
+        <div class="project-card">
+            <img src="images/House1.jpg" alt="">
+            <div class="project-content">
+                <h3>Luxury Apartments</h3>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="images/Apartment.jpg" alt="">
+            <div class="project-content">
+                <h3>Corporate Offices</h3>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <img src="Images/OngoingS.jpeg" alt="">
+            <div class="project-content">
+                <h3>On Going Project</h3>
+            </div>
+        </div>
+
+    </div>
+    
+
+</section>
+
+<section class="booking" id="booking">
+    <div class="booking-card">
+        <h2>Book Your Inquiry</h2>
+        <p>Choose your building service, preferred start date, and budget estimate. Our team will contact you soon.</p>
+        <button class="secondary-btn" id="bookingBtn">Start Booking</button>
+    </div>
+</section>
+
+
+<section class="contact" id="contact">
+
+    <h2 class="section-title">
+        Contact Us
+    </h2>
+
+    <form id="contactForm">
+
+        <input type="text" id="name"
+        placeholder="Your Name" required>
+
+        <input type="email" id="email"
+        placeholder="Your Email" required>
+
+        <select id="projectType" required>
+            <option value="" disabled selected>Select Project Type</option>
+            <option value="Residential Construction">Residential Construction</option>
+            <option value="Commercial Construction">Commercial Construction</option>
+            <option value="Renovation">Renovation</option>
+            <option value="Other">Other</option>
+        </select>
+
+        <input type="date" id="preferredDate" required>
+
+        <input type="text" id="budget"
+        placeholder="Estimated Budget" required>
+
+        <input type="tel" id="phone"
+        placeholder="Phone Number" required>
+
+        <textarea id="message"
+        placeholder="Your Message"></textarea>
+
+        <div id="contactStatus" class="contact-status" style="display: none;"></div>
+
+        <button type="submit">
+            Send Booking Inquiry
+        </button>
+
+    </form>
+
+</section>
+
+<section class="rating" id="rating">
+    <h2 class="section-title">Rate Our Site</h2>
+    <div class="rating-card">
+        <p>Click stars below to rate our website and see the score instantly.</p>
+        <div class="star-rating" id="starRating">
+            <i class="fa-regular fa-star" data-value="1"></i>
+            <i class="fa-regular fa-star" data-value="2"></i>
+            <i class="fa-regular fa-star" data-value="3"></i>
+            <i class="fa-regular fa-star" data-value="4"></i>
+            <i class="fa-regular fa-star" data-value="5"></i>
+        </div>
+        <button class="secondary-btn" id="ratingSubmitBtn">Submit Rating</button>
+        <div class="rating-result" id="ratingResult">
+            <p>Average rating: <span id="averageRating">0</span> / 5</p>
+            <p>Total ratings: <span id="ratingCount">0</span></p>
+            <p>Your latest rating: <span id="userRating">None</span></p>
+        </div>
+    </div>
+</section>
+
+<footer>
+
+    <h2>BuildMaster Construction</h2>
+
+    <p>
+        Building your future with quality.
+    </p>
+
+    <div class="footer-grid">
+        <div class="footer-brand">
+            <h2>BuildMaster Construction</h2>
+            <p>Delivering quality, trust, and beautiful structures for every client.</p>
+        </div>
+
+        <div class="footer-links">
+            <h3>Quick Links</h3>
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+
+        <div class="footer-contact">
+            <h3>Contact</h3>
+            <p><i class="fas fa-phone-alt"></i> <a href="tel:0707038167">0707038167</a></p>
+            <p><i class="fab fa-whatsapp"></i> <a href="https://wa.me/0707038167">0707038167</a></p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:peterouma988@gmail.com">peterouma988@gmail.com</a></p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2026 BuildMaster Construction. All Rights Reserved.</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/dison.juma.9" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.tiktok.com/@user7626703558722?_r=1&_t=ZS-96SbNIh5CM9" target="_blank"><i class="fab fa-tiktok"></i></a>
+        </div>
+    </div>
+
+</footer>
+
+<!-- Login Modal -->
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>Admin Login</h2>
+            <span class="close">&times;</span>
+        </div>
+        <form id="loginForm">
+            <div class="form-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div id="loginError" class="login-error" style="display: none;"></div>
+            <button type="submit" class="login-btn">Login</button>
+        </form>
+    </div>
+</div>
+
+<style>
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 9999;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        animation: fadeIn 0.3s ease;
+    }
+
+    .modal.show {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .modal-content {
+        background-color: white;
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+        width: 100%;
+        max-width: 400px;
+        animation: slideUp 0.3s ease;
+    }
+
+    .modal-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 30px;
+        border-bottom: 2px solid #f0f0f0;
+        padding-bottom: 15px;
+    }
+
+    .modal-header h2 {
+        color: #333;
+        font-size: 1.5em;
+        margin: 0;
+    }
+
+    .close {
+        font-size: 28px;
+        font-weight: bold;
+        color: #aaa;
+        cursor: pointer;
+        transition: color 0.3s ease;
+    }
+
+    .close:hover,
+    .close:focus {
+        color: #000;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        color: #333;
+        font-weight: 600;
+        font-size: 0.95em;
+    }
+
+    .form-group input {
+        width: 100%;
+        padding: 12px;
+        border: 2px solid #ddd;
+        border-radius: 6px;
+        font-size: 1em;
+        transition: border-color 0.3s ease;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .form-group input:focus {
+        outline: none;
+        border-color: #667eea;
+        box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+    }
+
+    .login-error {
+        background-color: #ffebee;
+        color: #c62828;
+        padding: 12px;
+        border-radius: 6px;
+        margin-bottom: 15px;
+        border-left: 4px solid #c62828;
+        font-size: 0.9em;
+    }
+
+    .login-btn {
+        width: 100%;
+        padding: 12px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        border: none;
+        border-radius: 6px;
+        font-size: 1em;
+        font-weight: 600;
+        cursor: pointer;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .login-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+    }
+
+    .login-btn:active {
+        transform: translateY(0);
+    }
+
+    .contact-status {
+        margin: 10px 0 0;
+        padding: 12px 14px;
+        border-radius: 8px;
+        font-size: 0.95em;
+        line-height: 1.4;
+        display: none;
+    }
+
+    .contact-status.success {
+        background-color: #e6ffed;
+        color: #1f7a2b;
+        border: 1px solid #8ee3a8;
+    }
+
+    .contact-status.error {
+        background-color: #ffe6e6;
+        color: #9f1f2b;
+        border: 1px solid #e38e8e;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes slideUp {
+        from {
+            transform: translateY(20px);
+            opacity: 0;
+        }
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+</style>
+
+<script src="script.js"></script>
+
+</body>
+</html>
