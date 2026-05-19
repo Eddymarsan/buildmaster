@@ -1,18 +1,22 @@
 <?php
-// Database configuration. Update these values if your MySQL login differs.
-const DB_HOST = '127.0.0.1';
-const DB_NAME = 'buildmaster';
-const DB_USER = 'root';
-const DB_PASS = '';
-const DB_CHARSET = 'utf8mb4';
+// Database configuration for Render PostgreSQL
 
-function getDbConnection() {
-    $dsn = sprintf('mysql:host=%s;dbname=%s;charset=%s', DB_HOST, DB_NAME, DB_CHARSET);
-    $options = [
+$host = getenv('DB_HOST') ?: 'dpg-d86caln7f7vs73931vjg-a';
+$dbname = getenv('DB_NAME') ?: 'buildmaster_5g1n';
+$username = getenv('DB_USER') ?: 'buildmaster_user';
+$password = getenv('DB_PASS') ?: 'bSZGyrQV2MXLM9y7NEFX35HXhp93Shr4';
+$port = getenv('DB_PORT') ?: '5432';
+
+$dsn = "pgsql:host=$host;port=$port;dbname=$dbname;";
+
+try {
+    $conn = new PDO($dsn, $username, $password, [
         PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION,
         PDO::ATTR_DEFAULT_FETCH_MODE => PDO::FETCH_ASSOC,
         PDO::ATTR_EMULATE_PREPARES => false,
-    ];
-
-    return new PDO($dsn, DB_USER, DB_PASS, $options);
+    ]);
+    return $conn;
+} catch (PDOException $e) {
+    die("Database connection failed: " . $e->getMessage());
 }
+?>
